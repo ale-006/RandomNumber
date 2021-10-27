@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Random Number</title>
+    <link rel="icon" href="https://cdn-icons.flaticon.com/png/512/709/premium/709388.png?token=exp=1635355183~hmac=b407220a6df5c4c28037df7387ad9489">
+    <link rel="shortcut icon" href="https://cdn-icons.flaticon.com/png/512/709/premium/709388.png?token=exp=1635355183~hmac=b407220a6df5c4c28037df7387ad9489">
+</head>
+<style>
+    * {
+        user-select: none;
+        user-zoom: none;
+    }
+
+    body {
+    background-color: #141218;
+    }
+        @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+    p {
+        color: black;
+        font-family: 'Bebas Neue', cursive;    size: 30px;
+        font-size: 30px;
+        letter-spacing: 0px;
+        word-spacing: 0px;
+    }
+    button {
+        display: inline-flex;
+        text-decoration: none;
+        color: #68f368;
+        background-color: #141218;
+        border: 2px solid #68f368;
+        border-radius: 30px;
+        width: 250px;
+        height: 60px;
+        font-family: 'Bebas Neue', cursive;    font-weight: bolder;
+        margin-top: 50px;
+        font-size: 30px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+    }
+    button:hover {
+        color: #141218;
+        background-color: #68f368;
+        transform: scale(1.05);
+        cursor: pointer;
+        font-family: 'Bebas Neue', cursive;    font-weight: bolder;
+    }
+
+    input {
+        margin-top: 50px;
+        text-align: center;
+        width: 500px;
+        height: 50px;
+        border: 0;
+        border-bottom: 6px solid limegreen;
+        font-family: 'Bebas Neue', cursive;	outline: 0;
+        font-size: 1.3rem;
+        color: #fff;
+        padding: 7px 0;
+        background: transparent;
+        transition: 0.2s ease-in-out;
+    }
+
+
+    input:focus {
+        border-bottom: 6px solid #8EFF33;
+    }
+    .result {
+        color: #68f368;
+        font-family: 'Bebas Neue', cursive;    font-weight: bolder;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        font-size: 70px;
+    }
+    .credits {
+        color: #68f368;
+        font-family: 'Bebas Neue', cursive;    font-weight: bolder;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        }
+</style>
+
+<body>
+    <center>
+    <input type="text" id="small" placeholder="Smallest Number" onblur="getVal()" required />
+    <br>
+    <input type="text" id="high" onblur="getVal()" placeholder="Highest Number" required />
+    <br><br>
+    <button onclick="example()">EXAMPLE</button> &nbsp;
+    <button onclick="random()">GENERATE</button>
+    <p class="result" id="result"></p>
+    <p class="credits">Created by Alessandro Baio - <a href="https://github.com/ale-006/RandomNumber" style="color:#68f368">GitHub</a></p>
+    </center>
+
+    <script>
+        function example() {
+            let numPiccolo = Math.floor(Math.random() * 30);
+            let numGrande = Math.floor(Math.random() * (60 - 30)) + 30
+            document.getElementById("small").value = numPiccolo;
+            document.getElementById("high").value = numGrande;
+        }
+        function random() {
+            let min = document.getElementById("small").value
+            let max = document.getElementById("high").value
+            let result = Math.floor(Math.random() * (max - min)) + parseInt(min)
+            let output = "";
+            if(isNaN(result)) {
+                document.getElementById("result").innerHTML = "Error!"
+            }
+            else {
+            document.getElementById("result").innerHTML = result
+            }
+        }
+    </script>
+</body>

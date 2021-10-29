@@ -1,0 +1,32 @@
+<!-- CREDITS BY ALESSANDRO BAIO -->
+<!-- IT'S FORBIDDEN CLONE THIS WEBSITE WITHOUT THE PERMISSION -->
+
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Random Number Generator.">
+  <meta name="author" content="random-number.ga">
+  <meta name="og:image" content="https://cdn-icons.flaticon.com/png/512/709/premium/709388.png?token=exp=1635355183~hmac=b407220a6df5c4c28037df7387ad9489">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Number</title>
+    <link rel="icon" href="https://cdn-icons.flaticon.com/png/512/709/premium/709388.png?token=exp=1635355183~hmac=b407220a6df5c4c28037df7387ad9489">
+    <link rel="shortcut icon" href="https://cdn-icons.flaticon.com/png/512/709/premium/709388.png?token=exp=1635355183~hmac=b407220a6df5c4c28037df7387ad9489">
+</head>
+
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <center>
+    <input type="text" id="small" placeholder="MIN" onblur="getVal()" required />
+    <br>
+    <input type="text" id="high" onblur="getVal()" placeholder="MAX" required />
+    <br><br>
+    <button onclick="example()">EXAMPLE</button> &nbsp;
+    <button onclick="random()">GENERATE</button>
+    <p class="result" id="result"></p>
+    <p class="credits">Created by ale_006 - <a href="https://github.com/ale-006/RandomNumber" style="color:#68f368">GitHub</a></p>
+    </center>
+
+    <script src="script.js"></script>
+</body>

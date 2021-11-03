@@ -7,7 +7,7 @@ function example() {
 function random() {
     let min = document.getElementById("small").value
     let max = document.getElementById("high").value
-    let result = Math.floor(Math.random() * (max - min)) + parseInt(min)
+    let result = Math.floor(Math.random() * (max - min + 1)) + parseInt(min)
     let output = "";
     if(isNaN(result)) {
         document.getElementById("result").innerHTML = "Error!"

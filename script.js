@@ -6,7 +6,7 @@ function example() {
 }
 function random() {
     let min = document.getElementById("small").value
-    let max = document.getElementById("high").value
+    let max = document.getElementById("high").value + 1
     let result = Math.floor(Math.random() * (max - min)) + parseInt(min)
     let output = "";
     if(isNaN(result)) {

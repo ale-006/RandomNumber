@@ -6,8 +6,8 @@ function example() {
 }
 function random() {
     let min = document.getElementById("small").value
-    let max = document.getElementById("high").value + 1
-    let result = Math.floor(Math.random() * (max - min)) + parseInt(min)
+    let max = document.getElementById("high").value
+    let result = Math.floor(Math.random() * (max - min)) + parseInt(min) + 1
     let output = "";
     if(isNaN(result)) {
         document.getElementById("result").innerHTML = "Error!"

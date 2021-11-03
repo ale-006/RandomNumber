@@ -14,6 +14,7 @@ function random() {
     }
     if(result == 1) {
                 document.getElementById("result").innerHTML = result + " - BAIO"
+    }
     else {
     document.getElementById("result").innerHTML = result
     }

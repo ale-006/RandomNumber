@@ -12,9 +12,6 @@ function random() {
     if(isNaN(result)) {
         document.getElementById("result").innerHTML = "Error!"
     }
-    if(result == 1) {
-                document.getElementById("result").innerHTML = result + " - BAIO"
-    }
     else {
     document.getElementById("result").innerHTML = result
     }

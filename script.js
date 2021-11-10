@@ -12,6 +12,6 @@ function random() {
         document.getElementById("result").innerHTML = "Error! These are not numbers."
     }
     else {
-    document.getElementById("result").innerHTML = "10"
+    document.getElementById("result").innerHTML = result
     }
 }

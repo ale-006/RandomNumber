@@ -8,8 +8,11 @@ function random() {
     let min = document.getElementById("small").value
     let max = document.getElementById("high").value
     let result = Math.floor(Math.random() * (max - min + 1)) + parseInt(min)
-    if(isNaN(result)) {
-        document.getElementById("result").innerHTML = "Error! These are not numbers."
+    if(min < 0) {
+        document.getElementById("result").innerHTML = "MIN must be > than 0."
+    }
+    if(max < min) {
+        document.getElementById("result").innerHTML = "MAX must be > than MIN."
     }
     else {
     document.getElementById("result").innerHTML = result

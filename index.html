@@ -1,34 +1,49 @@
-<!-- CREDITS BY ALESSANDRO BAIO -->
-<!-- IT'S FORBIDDEN CLONE THIS WEBSITE WITHOUT THE PERMISSION -->
-
 <!DOCTYPE html>
-
-<head>
-  <title>Random Number</title>
-  <meta name="description" content="The best number generator! Simple, easy and without ads.">
-  <meta name="author" content="random-number.ga">
-  <meta name="color" content="GREEN">
-  <meta name="theme-color" content="GREEN">
-  <meta name="og:image" content="https://i.ibb.co/whC7jyD/709388.png">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta charset="UTF-8">
-  <link rel="icon" href="https://i.ibb.co/whC7jyD/709388.png" type="image/x-icon"/>
-  <link rel="shortcut icon" href="https://i.ibb.co/whC7jyD/709388.png" type="image/x-icon"/>
-</head>
-
-<link rel="stylesheet" href="style.css">
-
+<html lang="en" >
+  <head>
+    <title>Random Number</title>
+    <meta name="description" content="The best number generator! Simple, easy and without ads.">
+    <meta name="author" content="random-number.ga">
+    <meta name="color" content="GREEN">
+    <meta name="theme-color" content="GREEN">
+    <meta name="og:image" content="https://i.ibb.co/whC7jyD/709388.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="icon" href="https://i.ibb.co/whC7jyD/709388.png" type="image/x-icon"/>
+    <link rel="shortcut icon" href="https://i.ibb.co/whC7jyD/709388.png" type="image/x-icon"/>
+  </head>
+  
+  <link rel="stylesheet" href="style.css">
 <body>
-    <center>
-    <input type="number" id="small" placeholder="MIN" onblur="getVal()" required />
-    <br>
-    <input type="number" id="high" onblur="getVal()" placeholder="MAX" required />
-    <br><br>
-    <button onclick="example()">EXAMPLE</button> &nbsp;
-    <button onclick="random()">GENERATE</button>
-    <p class="result" id="result"></p>
-    <p class="credits">Created by ale_006 - <a href="https://github.com/ale-006/RandomNumber" style="color:#68f368">GitHub</a></p>
-    </center>
-
-    <script src="script.js"></script>
+<!-- partial:index.partial.html -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up Form</title>
+        <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+      <div class="row">
+    <div class="col-md-12">
+      <div class="form">
+        <h1>Random Number<br>Generator</h1>
+        
+        <input type="number" id="min"placeholder="MIN" required>
+        <input type="number" id="max"placeholder="MAX" required>          
+          <h1 class="result" id="result"></h1>
+        <center>
+        <button onclick="random()">GENERATE</button>
+        </center>
+        <footer>Created by Alessandro Baio &middot; <a style="color: black" onclick="window.open(`https://github.com/ale-006/RandomNumber`, `_newtab`)">GitHub</a></footer>
+        
+        </div>
+        </div>
+      </div>
+      
+    </body>
+</html>
+<!-- partial -->
+<script src="script.js"></script>
 </body>
+</html>

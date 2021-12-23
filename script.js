@@ -1,17 +1,17 @@
-function example() {
-    let numPiccolo = Math.floor(Math.random() * 30);
-    let numGrande = Math.floor(Math.random() * (60 - 30)) + 30
-    document.getElementById("small").value = numPiccolo;
-    document.getElementById("high").value = numGrande;
-}
 function random() {
-    let min = document.getElementById("small").value
-    let max = document.getElementById("high").value
+    let min = document.getElementById("min").value
+    let max = document.getElementById("max").value
     let result = Math.floor(Math.random() * (max - min + 1)) + parseInt(min)
-    if(parseInt(max) < parseInt(min)) {
-        document.getElementById("result").innerHTML = "MAX must be > than MIN."
+    if(min == "" || max == "") {
+        document.getElementById("max").style.border = "2px solid red"
+        document.getElementById("min").style.border = "2px solid red"
+    }
+    else if(parseInt(max) < parseInt(min)) {
+        document.getElementById("result").innerHTML = min + " is higher than " + max
     }
     else {
-    document.getElementById("result").innerHTML = result
+        document.getElementById("max").style.border = "none"
+        document.getElementById("min").style.border = "none"
+        document.getElementById("result").innerHTML = result
     }
 }

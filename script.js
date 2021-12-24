@@ -13,18 +13,6 @@ function random() {
         document.getElementById("max").style.border = "none"
         document.getElementById("min").style.border = "none"
         document.getElementById("result").innerHTML = result
+        navigator.clipboard.writeText(result);
     }
-}
-
-function copia() {
-  var copyText = document.getElementById("result").value
-  if(copyText == "") {
-      return false;
-  }
-  else {
-
-  navigator.clipboard.writeText(copyText);
-
-  alert("Number " + copyText.value + " copied to clipboard!")
-  }
 }

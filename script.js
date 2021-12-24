@@ -14,5 +14,13 @@ function random() {
         document.getElementById("min").style.border = "none"
         document.getElementById("result").innerHTML = result
         navigator.clipboard.writeText(result);
+        setInterval("azione('copy')",1000);
     }
 }
+
+function mostra(var) { 
+if(document.getElementById(var).style.display=='block') { 
+    document.getElementById(var).style.display='none'; 
+} else { 
+    document.getElementById(var).style.display='block'; 
+} 

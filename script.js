@@ -15,3 +15,17 @@ function random() {
         document.getElementById("result").innerHTML = result
     }
 }
+
+function copia() {
+  var copyText = document.getElementById("result");
+  if(copyText == "") {
+      return false;
+  }
+
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+  navigator.clipboard.writeText(copyText.value);
+
+  alert("Number " + copyText.value + " copied to clipboard!");
+}

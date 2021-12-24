@@ -14,7 +14,7 @@ function random() {
         document.getElementById("min").style.border = "none"
         document.getElementById("result").innerHTML = result
         navigator.clipboard.writeText(result);
-        setInterval("azione('copy')",1000);
+        setInterval("mostra('copy')", 2000);
     }
 }
 

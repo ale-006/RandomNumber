@@ -16,6 +16,7 @@ body {
   border-radius: 8px;
   position: absolute;
   margin-top: 25%;
+  margin-left: -25%;
 }
 
 h1 {

@@ -13,6 +13,7 @@ function random() {
         document.getElementById("max").style.border = "none"
         document.getElementById("min").style.border = "none"
         document.getElementById("result").innerHTML = result
+        document.getElementById("result").style..fontSize = "3em"
         navigator.clipboard.writeText(result);
     }
 }

@@ -14,6 +14,8 @@ body {
   margin: 10px auto;
   padding: 10px 20px;
   border-radius: 8px;
+  position: absolute;
+  margin-top: 25%;
 }
 
 h1 {
